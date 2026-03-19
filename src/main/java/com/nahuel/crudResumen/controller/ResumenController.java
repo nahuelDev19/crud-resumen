@@ -18,6 +18,7 @@ public class ResumenController {
         this.resumenService = resumenService;
     }
 
+
     @PostMapping("/guardar")
     public ResponseEntity<Resumen> guardar(@RequestBody Resumen resumen){
         return ResponseEntity.ok(resumenService.create(resumen));
